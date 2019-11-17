@@ -2,19 +2,19 @@
 <html>
     <head>
         <title>Random Password</title> 
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
         <div class="container">
-            <h2>Password Generator</h2>
+                 <h2>Password Generator</h2>
                  <textarea
                     readonly
                     id ="result"
                     placeholder="Your secure password"
                     aria-label="Generated Password">
-                </textarea>
-                </div>
-                <button onClick = "myFunction()"> Copy text</button>
+                 </textarea>
+                 <button onClick = "myFunction()"> Copy text</button>
             </div>
             <div class="settings">
                 <div class="setting">
@@ -38,7 +38,7 @@
                     <input type="checkbox" id="symbols" checked />
                 </div>
             </div>
-            <button type="button" class="btn btn-info" id="generate">
+            <button type="button" class="btn btn-outline-secondary" id="generate">
                 Generate password
             </button>
         </div>
