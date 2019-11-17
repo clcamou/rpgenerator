@@ -6,7 +6,16 @@
     var numbersEl = document.getElementById('numbers');
     var symbolsEl = document.getElementById('symbols');
     var generateEl = document.getElementById('generate');
-    var clipboard = document.getElementById('clipboard');
+	var clipboard = document.getElementById('clipboard');
+	
+//Clipboard function 
+ 	function myFunction() {
+		 var copyText = document.getElementById("result");
+		 copyText.select();
+		 document.execCommand("copy");
+		 alert("Copied the text: " + copyText.value);
+		 console.log("clicked the copy text");
+	 }
 
 //functions//
     var randomFunc = {
@@ -32,9 +41,8 @@
 	var typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item => Object.values(item)[0]);
 
 	if(typesCount === 0) {
-	return '';
+	return 'Needs to be between 8-128';
 	}
-	
 
 	for(let i=0; i<length; i+=typesCount) {
 	    typesArr.forEach(type => {
@@ -64,12 +72,7 @@
 	    return symbols[Math.floor(Math.random() * symbols.length)];
          }
 
-	function myFuntion() {
-		var copyText = document.getElementById("result");
-		document.execCommand("copy");
-		alert("Copied the text: " + copyText.value);
-	}
-	
+
 
 	
 
